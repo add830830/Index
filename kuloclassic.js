@@ -6,7 +6,7 @@ function init() {
     $('body').addClass("mdui-theme-primary-blue-grey mdui-theme-accent-blue");
     var html = `
 <h1 id="heading">Index of <?php echo urldecode($path);?></h1>
-<h5> Uploaded And Maintained by <a href="https://anujdakhore.ga">Anuj Dakhore.</a></h5><hr>
+<h3> Uploaded And Maintained by <a href="https://anujdakhore.ga">Anuj Dakhore.</a></h3><hr>
 <table id="table">
 </table>
 	`;
