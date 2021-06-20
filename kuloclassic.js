@@ -38,6 +38,7 @@ function nav(path) {
 function list(path) {
     var content = `
 <tr><th class="file-name">Name</th><th class="file-size">Size</th><th class="file-date-modified">Date Modified</th></tr>
+<h5> Uploaded And Maintained by Anuj Dakhore.</h5>
 	`;
 
     if (path != '/') {
