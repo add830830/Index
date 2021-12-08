@@ -1,6 +1,4 @@
-// Redesigned by t.me/TheFirstSpeedster from https://github.com/ParveenBhadooOfficial/Google-Drive-Index which was written by someone else, credits are given on Source Page.
-// v2.0.18
-// Initialize the page
+// 2.0.18
 function init() {
     document.siteName = $('title').html();
     var html = `<header>
