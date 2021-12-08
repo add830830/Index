@@ -930,7 +930,7 @@ function file_video(path) {
   <div class="card text-center">
   <div class="text-center">
   <div class="${UI.file_view_alert_class}" id="file_details" role="alert">${obj.name}<br>${size}</div>
-	<video id="vplayer" width="100%" height="100%" playsinline controls: ['play-large', 'progress', 'current-time', 'mute', 'volume', 'captions', 'settings', 'pip', 'airplay', 'fullscreen']; data-plyr-config="{ "title": "${decodename}"}" data-poster="${poster}" style="--plyr-color-main: green;">
+	<video id="vplayer" width="100%" height="100%" playsinline data-plyr-config="{ "title": "${decodename}"}" data-poster="${poster}" style="--plyr-color-main: green;">
 	  <source src="${url}" type="video/mp4" />
 	  <source src="${url}" type="video/webm" />
 	  <track kind="captions" label="Default" src="${caption}.vtt" srclang="en" />
@@ -950,7 +950,8 @@ function file_video(path) {
   </div>
 	${UI.disable_player ? '<style>.plyr{display:none;}</style>' : ''}
   <script>
-   const player = new Plyr('#vplayer',{ratio: "${UI.plyr_io_video_resolution}"});
+   var controls = ['play-large', 'restart', 'rewind', 'play', 'fast-forward', 'progress', 'current-time', 'duration', 'mute', 'volume', 'captions', 'settings', 'pip', 'airplay', 'download', 'fullscreen'];
+   const player = new Plyr('#vplayer', {controls}, {ratio: "${UI.plyr_io_video_resolution}"});
   </script></br>
 ${UI.disable_video_download ? `` : `
 <div class="card-body">
