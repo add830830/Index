@@ -928,22 +928,13 @@ function file_video(path) {
   <div class="card text-center">
   <div class="text-center">
   <div class="${UI.file_view_alert_class}" id="file_details" role="alert">${obj.name}<br>${size}</div>
-	<video id="vplayer" width="100%" height="100%" playsinline data-plyr-config="{ "title": "${decodename}"}" data-poster="${poster}" style="--plyr-color-main: ${UI.css_p_tag_color};">
+	<video id="vplayer" width="100%" height="100%" playsinline data-plyr-config="{"title": "${decodename}"}" data-poster="${poster}" >
 	  <source src="${url}" type="video/mp4" />
 	  <source src="${url}" type="video/webm" />
 	  <track kind="captions" label="Default" src="${caption}.vtt" srclang="en" />
-    <track kind="captions" label="English" src="${caption}.en.vtt" srclang="en" default />
-    <track kind="captions" label="Hindi" src="${caption}.hi.vtt" srclang="hi" />
-    <track kind="captions" label="Russian" src="${caption}.ru.vtt" srclang="ru" />
-    <track kind="captions" label="Malayalam" src="${caption}.ml.vtt" srclang="ml" />
-    <track kind="captions" label="Korean" src="${caption}.ko.vtt" srclang="ko" />
-    <track kind="captions" label="Japanese" src="${caption}.ja.vtt" srclang="ja" />
-    <track kind="captions" label="Indonesian" src="${caption}.id.vtt" srclang="id" />
-    <track kind="captions" label="German" src="${caption}.de.vtt" srclang="de" />
-    <track kind="captions" label="French" src="${caption}.fr.vtt" srclang="fr" />
-    <track kind="captions" label="Chinese" src="${caption}.zh.vtt" srclang="zh" />
-    <track kind="captions" label="Arabic" src="${caption}.ar.vtt" srclang="ar" />
-	<track kind="captions" label="${UI.custom_srt_lang}" src="${caption}.${UI.custom_srt_lang}.vtt" srclang="${UI.custom_srt_lang}" />
+          <track kind="captions" label="English" src="${caption}.en.vtt" srclang="en" default />
+          <track kind="captions" label="Hindi" src="${caption}.hi.vtt" srclang="hi" />
+   	  <track kind="captions" label="${UI.custom_srt_lang}" src="${caption}.${UI.custom_srt_lang}.vtt" srclang="${UI.custom_srt_lang}" />
 	</video>
   </div>
 	${UI.disable_player ? '<style>.plyr{display:none;}</style>' : ''}
