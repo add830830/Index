@@ -522,7 +522,7 @@ function append_files_to_list(path, files) {
  * Render the search results list. There is a lot of repetitive code, but there are different logics in it.
  */
 function render_search_result_list() {
-    var content = `
+    var content = `<br>
   <div class="container"><br>
   <div class="card">
   <div class="${UI.path_nav_alert_class} d-flex align-items-center" role="alert" style="margin-bottom: 0;">Search Results</div>
