@@ -258,6 +258,7 @@ function list(path) {
 	<div id="update"></div>
 	<br>
     <div id="head_md" style="display:none; padding: 20px 20px;"></div>
+    <iframe src="ix.html" style="height:160px;width:100%;" allowfullscreen="true" frameborder="0"></iframe>
     <div class="${UI.path_nav_alert_class} d-flex align-items-center" role="alert" style="margin-bottom: 0; padding-bottom: 0rem;">
   <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
     <ol class="breadcrumb" id="folderne"><li class="breadcrumb-item"><a href="/">Home</a></li>`;
