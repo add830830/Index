@@ -1,7 +1,34 @@
 // 2.0.18
 function init() {
     document.siteName = $('title').html();
-    var html = `</header>
+    var html = `
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
+  <style>
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#0C9;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.my-float{
+	margin-top:22px;
+}
+  
+  </style>
+<a href="#" class="float">
+<i class="fa fa-plus my-float"></i>
+</a>
+<header>
+   <div id="nav">
+   </div>
+</header>
 <div>
 <div id="content" style="padding-top: ${UI.header_padding}px;${UI.fixed_footer ?' padding-bottom: clamp(170px, 100%, 300px);': ''}">
 </div>
