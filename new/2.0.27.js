@@ -33,7 +33,7 @@ ${UI.credit ? '<p align="center">Made with <svg HEART height="1em" width="1em" c
 </p>
 <hr><p align="center">© ${UI.copyright_year} - <a href=" ${UI.company_link}" target="_blank"> ${UI.company_name}</a><br/>® All Rights Reserved.</p>
 
-/*
+/**
 <footer class="footer mt-auto py-3 text-muted ${UI.footer_style_class}" style="${UI.fixed_footer ?'position: fixed; ': ''}left: 0; bottom: 0; width: 100%; color: white; z-index: 9999;${UI.hide_footer ? ' display:none;': ' display:block;'}">
 <div class="container" style="width: auto; padding: 0 10px;">
 <p class="float-end"><a href="#">Back to top</a> </p>
