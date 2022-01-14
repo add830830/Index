@@ -335,8 +335,8 @@ function nav(path) {
 // Render file list
 function list(path) {
     var content = `<div class="container">${UI.fixed_header ?'<br>': ''}
+    <br>
     <div id="update"></div>
-	<br>
     <div id="head_md" style="display:none; padding: 20px 20px;"></div>
     <div class="${UI.path_nav_alert_class} d-flex align-items-center" role="alert" style="margin-bottom: 0; padding-bottom: 0rem;">
   <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
