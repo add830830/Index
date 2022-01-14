@@ -598,7 +598,6 @@ function render_search_result_list() {
     var content = `<br>
   <div class="container"><br>
   <div id="update"></div>
-  <br>
   <div class="card">
   <div class="${UI.path_nav_alert_class} d-flex align-items-center" role="alert" style="margin-bottom: 0;">Search Results</div>
   <div id="list" class="list-group text-break">
