@@ -946,6 +946,7 @@ function file_code(path) {
         "txt": "Text",
         "sh": "sh",
         "md": "Markdown",
+	"srt":"SubRip","vtt":"WebVTT","ssa":"SubStation Alpha","ttml":"Timed Text Markup Language","sbv":"Youtube Caption","dfxp":"Distribution Format Exchange Profile",
     };
     var name = path.split('/').pop();
     var decodename = unescape(name);
