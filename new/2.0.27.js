@@ -1041,7 +1041,7 @@ function file_video(path) {
                 var content = `
   <div class="container text-center"><br>
   <div class="card text-center">
-  <div class="text-center">
+  <div class="text-center"><br>
   <div class="${UI.file_view_alert_class}" id="file_details" role="alert">${obj.name}<br>${size}</div>
 	<video id="vplayer" width="100%" height="100%" playsinline style="--plyr-captions-text-color: #ffffff;--plyr-captions-background: #000000;" data-plyr-config="{"title": "${decodename}"}" data-poster="${poster}" >
 	  <source src="${url}" type="video/mp4" />
