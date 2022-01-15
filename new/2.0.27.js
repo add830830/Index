@@ -873,7 +873,7 @@ function file_others(path) {
                     var content = `
                   <div class="container"><br>
                   <div class="card text-center">
-                  <div class="card-body text-center">
+                  <div class="card-body text-center"><br>
                   <div class="${UI.file_view_alert_class}" id="file_details" role="alert"><b>${obj.name}</b> is a folder.</div>
                   </div><p>The Requested Link contains a folder not a file.</p>
                   <div class="card-text text-center">
@@ -887,7 +887,7 @@ function file_others(path) {
                     var content = `
 <div class="container"><br>
 <div class="card text-center">
-<div class="card-body text-center">
+<div class="card-body text-center"><br>
   <div class="${UI.file_view_alert_class}" id="file_details" role="alert">${obj.name}<br>${size}</div>
 </div>
 <div class="card-body">
@@ -918,7 +918,7 @@ function file_others(path) {
                 var content = `
 <div class="container"><br>
 <div class="card text-center">
-    <div class="card-body text-center">
+    <div class="card-body text-center"><br>
       <div class="${UI.file_view_alert_class}" id="file_details" role="alert"><b>404.</b> That’s an error.</div>
     </div><p>The requested URL was not found on this server. That’s all we know.</p>
       <div class="card-text text-center">
@@ -962,7 +962,7 @@ function file_code(path) {
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-twilight.css" integrity="sha256-Rl83wx+fN2p2ioYpdvpWxuhAbxj+/7IwaZrKQBu/KQE=" crossorigin="anonymous">
 <div class="container"><br>
 <div class="card text-center">
-<div class="card-body text-center">
+<div class="card-body text-center"><br>
   <div class="${UI.file_view_alert_class}" id="file_details" role="alert">${obj.name}<br>${size}</div>
 <div>
 <pre ${UI.second_domain_for_dl ? 'style="display:none;"': 'style="display:block;"'} class="line-numbers language-markup" data-src="plugins/line-numbers/index.html" data-start="-5" style="white-space: pre-wrap; counter-reset: linenumber -6;" data-src-status="loaded" tabindex="0"><code id="editor"></code></pre>
@@ -995,7 +995,7 @@ function file_code(path) {
                 var content = `
 <div class="container"><br>
 <div class="card text-center">
-    <div class="card-body text-center">
+    <div class="card-body text-center"><br>
       <div class="${UI.file_view_alert_class}" id="file_details" role="alert"><b>404.</b> That’s an error.</div>
     </div><p>The requested URL was not found on this server. That’s all we know.</p>
       <div class="card-text text-center">
@@ -1111,7 +1111,7 @@ ${UI.display_drive_link ? '<a type="button" class="btn btn-info" href="https://d
                 var content = `
 <div class="container"><br>
 <div class="card text-center">
-    <div class="card-body text-center">
+    <div class="card-body text-center"><br>
       <div class="${UI.file_view_alert_class}" id="file_details" role="alert"><b>404.</b> That’s an error.</div>
     </div><p>The requested URL was not found on this server. That’s all we know.</p>
       <div class="card-text text-center">
@@ -1182,7 +1182,7 @@ function file_audio(path) {
                 var content = `
 <div class="container"><br>
 <div class="card text-center">
-    <div class="card-body text-center">
+    <div class="card-body text-center"><br>
       <div class="${UI.file_view_alert_class}" id="file_details" role="alert"><b>404.</b> That’s an error.</div>
     </div><p>The requested URL was not found on this server. That’s all we know.</p>
       <div class="card-text text-center">
@@ -1312,7 +1312,7 @@ function file_pdf(path) {
                 var content = `
 <div class="container"><br>
 <div class="card text-center">
-    <div class="card-body text-center">
+    <div class="card-body text-center"><br>
       <div class="${UI.file_view_alert_class}" id="file_details" role="alert"><b>404.</b> That’s an error.</div>
     </div><p>The requested URL was not found on this server. That’s all we know.</p>
       <div class="card-text text-center">
@@ -1420,7 +1420,7 @@ function file_image(path) {
                 var content = `
 <div class="container"><br>
 <div class="card text-center">
-    <div class="card-body text-center">
+    <div class="card-body text-center"><br>
       <div class="${UI.file_view_alert_class}" id="file_details" role="alert"><b>404.</b> That’s an error.</div>
     </div><p>The requested URL was not found on this server. That’s all we know.</p>
       <div class="card-text text-center">
