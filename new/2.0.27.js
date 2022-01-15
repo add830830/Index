@@ -1055,7 +1055,21 @@ function file_video(path) {
   <script>
    var controls = ['play-large', 'restart', 'rewind', 'play', 'fast-forward', 'progress', 'current-time', 'duration', 'mute', 'volume', 'captions', 'settings', 'pip', 'airplay', 'download', 'fullscreen'];
    const player = new Plyr('#vplayer', {controls}, {ratio: "${UI.plyr_io_video_resolution}"});
-  </script></br>
+  </script>
+<style>
+.plyr__caption {
+  background: none;
+  color: white;
+  -webkit-text-stroke: .5px black;
+/*
+  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  bottom: -19;
+  font-size: 50px; 
+  border-radius: 15px;
+*/
+}
+</style>
+  </br>
 ${UI.disable_video_download ? `` : `
 <div class="card-body">
 <div class="input-group mb-4">
