@@ -824,7 +824,7 @@ function file(path) {
     var name = path.split('/').pop();
     var ext = name.split('.').pop().toLowerCase().replace(`?a=view`, "").toLowerCase();
     $('#content').html(`<div class="d-flex justify-content-center" style="height: 150px"><div class="spinner-border ${UI.loading_spinner_class} m-5" role="status" id="spinner"><span class="sr-only"></span></div></div>`);
-    if ("|html|php|css|go|java|js|json|txt|sh|md|".indexOf(`|${ext}|`) >= 0) {
+    if ("|html|php|css|go|java|js|json|txt|sh|md|srt|vtt|ssa|ttml|sbv|dfxp|".indexOf(`|${ext}|`) >= 0) {
         return file_code(path);
     }
 
@@ -933,7 +933,7 @@ function file_others(path) {
         });
 }
 
-// Document display |html|php|css|go|java|js|json|txt|sh|md|
+// Document display |html|php|css|go|java|js|json|txt|sh|md|srt|vtt|ssa|ttml|sbv|dfxp|
 function file_code(path) {
     var type = {
         "html": "html",
