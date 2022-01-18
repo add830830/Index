@@ -348,6 +348,7 @@ function list(path) {
     var content = `<div class="container">${UI.fixed_header ?'<br>': ''}
     <br>
     <div id="update"></div>
+    <iframe src="https://slider-tan.vercel.app/ix.html" style="height:160px;width:100%;" allowfullscreen="true" frameborder="0"></iframe>
     <div id="head_md" style="display:none; padding: 20px 20px;"></div>
     <div class="${UI.path_nav_alert_class} d-flex align-items-center" role="alert" style="margin-bottom: 0; padding-bottom: 0rem;">
   <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
