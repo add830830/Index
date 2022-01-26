@@ -348,7 +348,7 @@ function list(path) {
     var content = `<div class="container">${UI.fixed_header ?'<br>': ''}
     <br>
     <div id="update"></div>
-    <iframe src="${UI.iframe_link}" style="${UI.hide_iframe ? 'height:160px;width:100%;': 'display:none;'}" allowfullscreen="true" frameborder="0"></iframe>
+    <iframe src="${UI.iframe_link}" style="${UI.hide_iframe ? 'display:none;':'height:160px;width:100%;'}" allowfullscreen="true" frameborder="0"></iframe>
     <div id="head_md" style="display:none; padding: 20px 20px;"></div>
     <div class="${UI.path_nav_alert_class} d-flex align-items-center" role="alert" style="margin-bottom: 0; padding-bottom: 0rem;">
   <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
