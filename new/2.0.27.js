@@ -513,13 +513,13 @@ function append_files_to_list(path, files) {
             var filepath = path + item.name;
             var c = "file";
             // README is displayed after the last page is loaded, otherwise it will affect the scroll event
-            if (is_lastpage_loaded && item.name == "README.md" && UI.render_readme_md) {
+            if (is_lastpage_loaded && item.name == "Anu.md" && UI.render_readme_md) { // README.md
                 get_file(p, item, function(data) {
                     markdown("#readme_md", data);
                     $("img").addClass("img-fluid")
                 });
             }
-            if (item.name == "HEAD.md" && UI.render_head_md) {
+            if (item.name == "A.md" && UI.render_head_md) { // HEAD.md
                 get_file(p, item, function(data) {
                     markdown("#head_md", data);
                     $("img").addClass("img-fluid")
@@ -1049,6 +1049,8 @@ function file_video(path) {
 	  <source src="${url}" type="video/webm" />
 	  <track kind="captions" label="English" src="${caption}.vtt" srclang="en" default />
           <track kind="captions" label="Hindi" src="${caption}.hi.vtt" srclang="hi" />
+          <track kind="captions" label="Track3" src="${caption}.3.vtt" srclang="hi" />
+          <track kind="captions" label="Track4" src="${caption}.4.vtt" srclang="hi" />
    	  <track kind="captions" label="${UI.custom_srt_lang}" src="${caption}.${UI.custom_srt_lang}.vtt" srclang="${UI.custom_srt_lang}" />
 	</video>
   </div>
@@ -1086,19 +1088,19 @@ ${UI.display_drive_link ? '<a type="button" class="btn btn-info" href="https://d
       <span class="sr-only"></span>
     </button>
     <div class="dropdown-menu">
+      <a class="dropdown-item" href="vlc://${urlvlc}">VLC Mobile</a>
+   <!--
+      <a class="dropdown-item" href="${urlvlc}">VLC Desktop</a>
       <a class="dropdown-item" href="iina://weblink?url=${url}">IINA</a>
       <a class="dropdown-item" href="potplayer://${url}">PotPlayer</a>
-      <a class="dropdown-item" href="vlc://${urlvlc}">VLC Mobile</a>
-      <a class="dropdown-item" href="${urlvlc}">VLC Desktop</a>
       <a class="dropdown-item" href="nplayer-${url}">nPlayer</a>
-      <a class="dropdown-item" href="intent://${url_without_https}#Intent;type=video/any;package=is.xyz.mpv;scheme=https;end;">mpv-android</a>
       <a class="dropdown-item" href="mpv://${url_base64}">mpv x64</a>
+   -->
+      <a class="dropdown-item" href="intent://${url_without_https}#Intent;type=video/any;package=is.xyz.mpv;scheme=https;end;">mpv-android</a>
       <a class="dropdown-item" href="intent:${url}#Intent;package=com.mxtech.videoplayer.ad;S.title=${decodename};end">MX Player</a>
       <a class="dropdown-item" href="intent:${url}#Intent;package=com.mxtech.videoplayer.pro;S.title=${decodename};end">MX Player Pro</a>
       <a class="dropdown-item" href="intent:${url}#Intent;package=com.mxtech.videoplayer.television;S.title=${decodename};end">MX Player TV</a>
       <a class="dropdown-item" href="intent:${url}#Intent;component=idm.internet.download.manager/idm.internet.download.manager.Downloader;S.title=${decodename};end">1DM</a>
-      <a class="dropdown-item" href="intent:${url}#Intent;component=idm.internet.download.manager.adm.lite/idm.internet.download.manager.Downloader;S.title=${decodename};end">1DM Lite</a>
-      <a class="dropdown-item" href="intent:${url}#Intent;component=idm.internet.download.manager.plus/idm.internet.download.manager.Downloader;S.title=${decodename};end">1DM+ Plus</a>
     </div>
 </div>
 <button onclick="copyFunction()" onmouseout="outFunc()" class="btn btn-success"> <span class="tooltiptext" id="myTooltip">Copy</span> </button>
