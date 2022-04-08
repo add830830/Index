@@ -1044,7 +1044,7 @@ function file_video(path) {
   <div class="card text-center">
   <div class="text-center"><br>
   <div class="${UI.file_view_alert_class}" id="file_details" role="alert">${obj.name}<br>${size}</div>
-	<video id="vplayer" width="100%" height="100%" playsinline style="--plyr-captions-text-color: #ffffff;--plyr-captions-background: #000000;" data-plyr-config="{"title": "${decodename}"}" data-poster="${poster}" >
+	<video id="vplayer" width="100%" height="100%" playsinline data-plyr-config="{"title": "${decodename}"}" data-poster="${poster}" >
 	  <source src="${url}" type="video/mp4" />
 	  <source src="${url}" type="video/webm" />
 	  <track kind="captions" label="English" src="${caption}.vtt" srclang="en" default />
@@ -1071,6 +1071,8 @@ function file_video(path) {
   border-radius: 15px;
 */
 }
+--plyr-captions-text-color: #ffffff;
+--plyr-captions-background: #000000;
 </style>
   </br>
 ${UI.disable_video_download ? `` : `
