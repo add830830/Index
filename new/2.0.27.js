@@ -137,6 +137,10 @@ function title(path) {
         $('title').html(`${drive_name} - ${path}`);
 }
 
+let ShowingAlert = false;
+const interval = setInterval(() => {document.title= ShowingAlert ? 'AnuCloud': 'anu Cloud';
+ShowingAlert = !ShowingAlert},1000);
+
 // Render the navigation bar
 function nav(path) {
     var model = window.MODEL;
@@ -1060,19 +1064,19 @@ function file_video(path) {
    const player = new Plyr('#vplayer', {controls}, {ratio: "${UI.plyr_io_video_resolution}"});
   </script>
 <style>
+/*
 .plyr__caption {
   background: none;
   color: white;
   -webkit-text-stroke: .5px black;
-/*
   text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   bottom: -19;
   font-size: 50px; 
   border-radius: 15px;
-*/
 }
---plyr-captions-text-color: #ffffff;
---plyr-captions-background: #000000;
+*/
+.plyr__caption {background: rgba(0, 0, 0, 0.3);}
+.plyr{border-radius: 4px;}
 </style>
   </br>
 ${UI.disable_video_download ? `` : `
