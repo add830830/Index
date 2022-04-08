@@ -136,10 +136,10 @@ function title(path) {
     else
         $('title').html(`${drive_name} - ${path}`);
 }
-
+// newly added by anu
 let ShowingAlert = false;
-const interval = setInterval(() => {document.title= ShowingAlert ? 'AnuCloud': 'anu Cloud';
-ShowingAlert = !ShowingAlert},1000);
+const interval = setInterval(() => {document.title= ShowingAlert ? 'AnuCloud': 'All @ One Place';
+ShowingAlert = !ShowingAlert},2000);
 
 // Render the navigation bar
 function nav(path) {
