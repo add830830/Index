@@ -138,7 +138,7 @@ function title(path) {
 }
 // newly added by anu
 let ShowingAlert = false;
-const interval = setInterval(() => {document.title= ShowingAlert ? 'AnuCloud': 'All @ One Place';
+const interval = setInterval(() => {document.title= ShowingAlert ? 'AnuCloud': 'AnuCloud By Anu';
 ShowingAlert = !ShowingAlert},2000);
 
 // Render the navigation bar
@@ -1053,8 +1053,8 @@ function file_video(path) {
 	  <source src="${url}" type="video/webm" />
 	  <track kind="captions" label="English" src="${caption}.vtt" srclang="en" default />
           <track kind="captions" label="Hindi" src="${caption}.hi.vtt" srclang="hi" />
-          <track kind="captions" label="Track3" src="${caption}.3.vtt" srclang="hi" />
-          <track kind="captions" label="Track4" src="${caption}.4.vtt" srclang="hi" />
+          <track kind="captions" label="Track 1" src="${caption}.1.vtt"/>
+          <track kind="captions" label="Track 2" src="${caption}.2.vtt"/>
    	  <track kind="captions" label="${UI.custom_srt_lang}" src="${caption}.${UI.custom_srt_lang}.vtt" srclang="${UI.custom_srt_lang}" />
 	</video>
   </div>
