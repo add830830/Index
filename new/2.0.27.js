@@ -1,5 +1,6 @@
 // v2.0.27
-// latest 
+// latestest
+
 function init() {
     document.siteName = $('title').html();
     var html = `<header>
