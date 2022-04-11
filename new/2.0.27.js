@@ -1,5 +1,5 @@
 // v2.0.27
-// latestest
+// l1atestest
 
 function init() {
     document.siteName = $('title').html();
