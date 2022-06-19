@@ -1063,7 +1063,7 @@ function file_video(path) {
 	${UI.disable_player ? '<style>.plyr{display:none;}</style>' : ''}
   <script>
    var controls = ['play-large', 'restart', 'rewind', 'play', 'fast-forward', 'progress', 'current-time', 'duration', 'mute', 'volume', 'captions', 'settings', 'pip', 'airplay', 'download', 'fullscreen'];
-   const player = new Plyr('#vplayer', {controls}, {ratio: "${UI.plyr_io_video_resolution}"});
+   const player = new Plyr('#vplayer', {controls}, {ratio: "${UI.plyr_io_video_resolution}"}, {ratio: 60});
   </script>
 <style>
 /*
