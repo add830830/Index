@@ -168,7 +168,7 @@ function nav(path) {
     html += `<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">${UI.nav_link_3}</a><div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item"  href="/${cur}"> Home</a>`;
     if (!model.is_search_page) {
         var arr = path.trim('/').split('/');
-        var p = '/${cur}/';
+        var p = `/${cur}/`;
         if (arr.length > 1) {
             arr.shift();
             for (var i in arr) {
