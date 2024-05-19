@@ -1060,7 +1060,7 @@ function file_video(path) {
 	${UI.disable_player ? '<style>.plyr{display:none;}</style>' : ''}
   <script>
    var controls = ['play-large','rewind', 'play','fast-forward', 'progress', 'current-time', 'duration', 'settings', 'pip', 'airplay', 'fullscreen'];// 'restart','play', 'download', 'mute', 'volume'
-   const player = new Plyr('#vplayer', {controls: controls, ratio: "${UI.plyr_io_video_resolution}", seekTime: 60, invertTime: true});
+   const player = new Plyr('#vplayer', {controls: controls, ratio: "${UI.plyr_io_video_resolution}", seekTime: 60, captions: { active: true, language: 'auto', update: true }});
    player.on('ready', () => {player.volume = 1;});
   </script>
 <style>
