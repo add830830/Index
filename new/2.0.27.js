@@ -168,7 +168,7 @@ function nav(path) {
     html += `<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">${UI.nav_link_3}</a><div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item"  href="/${cur}"> Home</a>`;
     if (!model.is_search_page) {
         var arr = path.trim('/').split('/');
-        var p = `/${cur}/`;
+        var p = `/${cur}:/`;
         if (arr.length > 1) {
             arr.shift();
             for (var i in arr) {
@@ -1060,7 +1060,7 @@ function file_video(path) {
 	${UI.disable_player ? '<style>.plyr{display:none;}</style>' : ''}
   <script>
    var controls = ['play-large','rewind', 'fast-forward', 'progress', 'current-time', 'duration', 'settings', 'pip', 'airplay', 'fullscreen'];// 'restart','play', 'download', 'mute', 'volume'
-   const player = new Plyr('#vplayer', {controls}, {ratio: "${UI.plyr_io_video_resolution}, seektime: 60"});
+   const player = new Plyr('#vplayer', {controls}, {ratio: "${UI.plyr_io_video_resolution}", seektime: 60, settings: ['captions', 'quality', 'speed', 'loop', 'volume', 'airplay', 'fullscreen']});
    player.on('ready', () => {player.volume = 1;});
   </script>
 <style>
