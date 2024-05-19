@@ -30,7 +30,7 @@ function init() {
 <footer class="text-muted">
 <div class="container">
 <p style="float:right!important"><a href="#"><svg  BACK TO TOP width="2em" height="2em" viewBox="0 0 416.979 416.979" fill="${UI.css_p_tag_color}"><path d="M208.489,416.979c115.146,0,208.49-93.344,208.49-208.489C416.979,93.344,323.635,0,208.489,0S0,93.343,0,208.489C0,323.635,93.343,416.979,208.489,416.979z M127.24,219.452l68.259-118.21c2.68-4.641,7.632-7.499,12.99-7.499s10.31,2.858,12.99,7.499l68.258,118.21c2.682,4.642,2.682,10.359,0.002,15c-2.68,4.642-7.631,7.501-12.99,7.501h-33.26v66.282c0,8.284-6.715,15-15,15h-40c-8.284,0-15-6.716-15-15v-66.282H140.23c-5.359,0-10.312-2.859-12.991-7.501C124.56,229.812,124.56,224.094,127.24,219.452z"/></svg></a></p>
-${UI.credit ? '<p align="center">© ${UI.copyright_year} - <a href=" ${UI.company_link}" target="_blank"> ${UI.company_name}</a><br/>® All Rights Reserved.</p>' : ''}
+${UI.credit ? `<p align="center">© ${UI.copyright_year} - <a href=" ${UI.company_link}" target="_blank"> ${UI.company_name}</a><br/>® All Rights Reserved.</p>` : ''}
 <!--
 <footer class="footer mt-auto py-3 text-muted ${UI.footer_style_class}" style="${UI.fixed_footer ?'position: fixed; ': ''}left: 0; bottom: 0; width: 100%; color: white; z-index: 9999;${UI.hide_footer ? ' display:none;': ' display:block;'}">
 <div class="container" style="width: auto; padding: 0 10px;">
@@ -1060,7 +1060,7 @@ function file_video(path) {
 	${UI.disable_player ? '<style>.plyr{display:none;}</style>' : ''}
   <script>
    var controls = ['play-large','rewind', 'fast-forward', 'progress', 'current-time', 'duration', 'settings', 'pip', 'airplay', 'fullscreen'];// 'restart','play', 'download', 'mute', 'volume'
-   const player = new Plyr('#vplayer', {controls}, {ratio: "${UI.plyr_io_video_resolution}", seektime: 60, settings: ['captions', 'quality', 'speed', 'loop', 'volume', 'airplay', 'fullscreen']});
+   const player = new Plyr('#vplayer', {controls: controls, ratio: "${UI.plyr_io_video_resolution}", seektime: 60, settings: ['captions', 'quality', 'speed', 'loop', 'volume', 'airplay', 'fullscreen']});
    player.on('ready', () => {player.volume = 1;});
   </script>
 <style>
